@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamLens Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">▶</div>
+      <div>
+        <div class="brand-name">StreamLens Pro</div>
+        <div class="brand-subtitle">Universal Media Extractor</div>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="clearBtn" class="pill-btn danger">ล้างรายการ</button>
+      <button id="refreshBtn" class="pill-btn primary">↻ รีเฟรช</button>
+    </div>
+  </header>
+
+  <div class="summary-bar">
+    <span>ตรวจพบ: <strong id="count">0</strong> สื่อหลัก</span>
+    <span class="status-shield">🛡️ กรองโฆษณาออกแล้ว</span>
+  </div>
+
+  <main id="mediaList" class="media-list"></main>
+
+  <section id="empty" class="empty">
+    <div class="empty-icon">🎬</div>
+    <div class="empty-title">ยังไม่พบไฟล์หลักของวิดีโอ</div>
+    <div class="empty-text">
+      1. หากมีโฆษณาบังหน้า ให้กดปิดป้าย (X) หรือกด "ข้ามโฆษณา"<br>
+      2. กดปุ่ม Play ให้เนื้อเรื่องหนังเริ่มเล่น 2-3 วินาที<br>
+      3. กดปุ่ม <strong>"↻ รีเฟรช"</strong> ด้านบนนี้อีกครั้ง
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

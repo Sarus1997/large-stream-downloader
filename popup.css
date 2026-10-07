@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  width: 480px;
+  max-height: 590px;
+  overflow-y: auto;
+  background: #0b1120;
+  color: #f1f5f9;
+  font-size: 13px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+}
+
+.brand-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.brand-subtitle {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.pill-btn {
+  background: #334155;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pill-btn:hover {
+  background: #475569;
+}
+
+.pill-btn.primary {
+  background: #10b981;
+  border-color: #059669;
+}
+
+.pill-btn.primary:hover {
+  background: #059669;
+}
+
+.pill-btn.danger:hover {
+  background: #dc2626;
+  border-color: #ef4444;
+}
+
+.summary-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: #131c2e;
+  font-size: 11px;
+  color: #94a3b8;
+  border-bottom: 1px solid #1e293b;
+}
+
+.status-shield {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.media-list {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.combo-card {
+  border: 1px solid #10b981;
+  background: linear-gradient(180deg, #064e3b 0%, #1e293b 100%);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tag {
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.tag.HLS,
+.tag.DASH {
+  background: #10b981;
+  color: white;
+}
+
+.tag.VIDEO {
+  background: #2563eb;
+  color: white;
+}
+
+.tag.AUDIO {
+  background: #d97706;
+  color: white;
+}
+
+.tag.COMBO {
+  background: #8b5cf6;
+  color: white;
+}
+
+.size {
+  font-size: 11px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.card-url {
+  font-size: 11px;
+  color: #94a3b8;
+  word-break: break-all;
+  max-height: 40px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-act {
+  flex: 1;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  background: #334155;
+  color: white;
+}
+
+.btn-act:hover {
+  background: #475569;
+}
+
+.btn-act.primary {
+  background: #10b981;
+}
+
+.btn-act.primary:hover {
+  background: #059669;
+}
+
+.btn-act.combo-btn {
+  background: #8b5cf6;
+}
+
+.btn-act.combo-btn:hover {
+  background: #7c3aed;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+}
+
+.empty-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.empty-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.empty-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #94a3b8;
+  text-align: left;
+  background: #1e293b;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "StreamLens Pro",
+  "version": "4.5.0",
+  "description": "Universal Media & Stream Extractor พร้อมระบบรวมสตรีมภาพและเสียง",
+  "permissions": ["webRequest", "downloads", "storage", "activeTab", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "StreamLens Pro",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

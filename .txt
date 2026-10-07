@@ -1,0 +1,1 @@
+\ffmpeg\bin\ffmpeg.exe -i "URLภาพ" -i "URLเสียง" -c copy "C:\Users\sahar\Downloads\final_video.mp4"
